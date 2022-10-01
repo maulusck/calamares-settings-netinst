@@ -1,0 +1,49 @@
+- name: "Desktop Environment"
+  description: "Desktop Environment and Windows Manager"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+  - parrot-desktop-mate
+  - parrot-desktop-xfce
+  - parrot-desktop-kde
+  - parrot-desktop-i3
+
+- name: "Desktop Base Files"
+  description: "Base files for Desktop"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+  - parrot-menu
+  - parrot-wallpapers
+  - parrot-displaymanager
+  - plymouth
+  - plymouth-themes
+  - ara-icon-theme
+  - win10-icon-theme
+  - maia-icon-theme
+  - hackthebox-icon-theme
+
+# FIXME firefox profiles depends on parrot-interface-common
+# TODO sysinit
+
+- name: "Terminal utilities"
+  description: "Terminals stuff"
+  critical: false
+  hidden: false
+  selected: false
+  packages:
+  - bash-completion
+  - parrot-zsh-profiles
+  - fish
+  - powershell
+  - terminator
+  - byobu
+  - vim
+  - neovim
+  - nano
+  - figlet
+  - htop
+  - curl
+  - wget
