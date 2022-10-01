@@ -1,0 +1,7 @@
+#!/bin/sh
+
+CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
+
+sudo apt update && sudo apt install debootstrap -y
+debootstrap parrot $CHROOT 2>/dev/null
+exit 0
