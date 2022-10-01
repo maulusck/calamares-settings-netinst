@@ -1,0 +1,17 @@
+Source: calamares-settings-netinst
+Section: unknown
+Priority: optional
+Maintainer: Nong Hoang Tu <dmknght@parrotsec.org>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.5.1
+Homepage: <insert the upstream URL, if relevant>
+#Vcs-Browser: https://salsa.debian.org/debian/calamares-settings-netinst
+#Vcs-Git: https://salsa.debian.org/debian/calamares-settings-netinst.git
+Rules-Requires-Root: no
+
+Package: calamares-settings-netinst
+Architecture: any
+Replaces: calamares-settings-parrot
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: <insert up to 60 chars description>
+ <insert long description, indented with spaces>

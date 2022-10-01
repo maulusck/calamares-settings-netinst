@@ -1,0 +1,5 @@
+calamares-settings-netinst (0.1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Sun, 02 Oct 2022 02:24:59 +0700
