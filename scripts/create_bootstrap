@@ -3,5 +3,5 @@
 CHROOT=$(mount | grep proc | grep calamares | awk '{print $3}' | sed -e "s#/proc##g")
 
 sudo apt update && sudo apt install debootstrap -y
-debootstrap --include=dbus,apt parrot "$CHROOT" 2>/dev/null
+debootstrap --include=dbus,apt,locale parrot "$CHROOT" 2>/dev/null
 exit 0
