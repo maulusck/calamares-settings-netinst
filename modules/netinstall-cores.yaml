@@ -24,8 +24,8 @@
   - win10-icon-theme
   - maia-icon-theme
   - hackthebox-icon-theme
+  - parrot-firefox-profiles
 
-# FIXME firefox profiles depends on parrot-interface-common
 # TODO sysinit
 
 - name: "Terminal utilities"
