@@ -1,4 +1,0 @@
-#!/bin/sh
-
-dbus-uuidgen --ensure=/etc/machine-id
-dbus-uuidgen --ensure
