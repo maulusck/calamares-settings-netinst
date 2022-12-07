@@ -15,4 +15,4 @@ Live iso requires: debootstrap
 - FIXME: sources-media must have parrot's source list -> install sudo and dbus. This also fixes dbus-uuidgen and sudoers missing
 - TODO LUKS missing packages?
 - TODO: system init selector, services selector (nginx, apache2, ...)
-- might need something like `procps`, `psutils`, `dialog` and such
+- might need something like `psutils`, `dialog` and such -> add in `packages-pre.conf`
