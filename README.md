@@ -11,8 +11,12 @@ License: GPL3 (soem settings from arco linux)
 
 Live iso requires: debootstrap
 - FIXME: /usr/sbin/sources-media edit `apt-get` to apt. Belongs to `calamares-settings-parrot`
-- TODO: system init selector, services selector (nginx, apache2, ...)
-- FIXME cannot open /etc/shells (No such file or directory)\nEither another instance of /usr/sbin/add-shell is running, or it was previously interrupted.
+- TODO: services selector (nginx, apache2, ...) in core packages
+- FIXME: bash-completion and bash failed to install because of overwriting settings in /etc/. Try to solve it and add bash-completion to bootstrap again
+- FIXME: console-setup's setting at /etc/default/console-setup needs to change charmap to utf-8
+- TODO: install parrot's skel
+- TODO: install debian front-end like "dialog"
+- TODO: seem like debootstrap pulled everything (222 packages) but only installed required packages (about less than 100 packages). Must optimize it for faster debootstrap step
 
 Module explain:
 - shellprocess-bootstrap: Generating system with debootstrap. This step is to create a system with mimimized package list
