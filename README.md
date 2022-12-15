@@ -18,6 +18,7 @@ Live iso requires: `debootstrap`, temporarily included in `shellprocess-bootstra
 - **TODO**: install parrot's skel
 - **TODO**: install debian front-end like "dialog"
 - **TODO**: seem like debootstrap pulled everything (222 packages) but only installed required packages (about less than 100 packages). Must optimize it for faster debootstrap step
+- **TODO**: default init system is not pre-selected (check calamares docs)
 - **TODO**: grub missing parrot theme
 
 ##### After install issues:
