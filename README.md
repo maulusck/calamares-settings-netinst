@@ -13,15 +13,12 @@ Live iso requires: `debootstrap`, temporarily included in `shellprocess-bootstra
 
 - **FIXME**: /usr/sbin/sources-media edit `apt-get` to apt. Belongs to `calamares-settings-parrot`
 - **TODO**: services selector (nginx, apache2, ...) in core packages
-- **FIXME**: bash-completion and bash failed to install because of overwriting settings in /etc/. Try to solve it and add bash-completion to bootstrap again
-- **FIXME**: console-setup's setting at /etc/default/console-setup needs to change charmap to utf-8
-- **TODO**: install parrot's skel (solved?)
 - **TODO**: seem like debootstrap pulled everything (222 packages) but only installed required packages (about less than 100 packages). Must optimize it for faster debootstrap step
 - **TODO**: default init system is not pre-selected (check calamares docs)
 - **TODO**: grub missing parrot theme
 
 ##### After install issues:
-- default `/etc/bash.bashrc` and user `.bashrc` remains debian standard (solved?)
+- `/etc/skel/.bashrc` from `parrot-core` magically disappears, and subsequently does not get copied in user's home
 
 ##### Module explain:
 - `shellprocess-bootstrap`: Generating system with debootstrap. This step is to create a system with mimimized package list
