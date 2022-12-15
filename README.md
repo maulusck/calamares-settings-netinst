@@ -19,7 +19,7 @@ Live iso requires: debootstrap
 - TODO: seem like debootstrap pulled everything (222 packages) but only installed required packages (about less than 100 packages). Must optimize it for faster debootstrap step
 
 After install issues:
-- default `/etc/bash.bashrc` remains debian standard
+- default `/etc/bash.bashrc` and user `.bashrc` remains debian standard
 
 Module explain:
 - shellprocess-bootstrap: Generating system with debootstrap. This step is to create a system with mimimized package list
