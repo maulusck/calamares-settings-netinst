@@ -9,14 +9,14 @@ RE: https://wiki.debian.org/MachineId
 Shout out @Pandaiscool author of RebornOS for this solution
 License: GPL3 (soem settings from arco linux)
 
-Live iso requires: debootstrap
-- FIXME: /usr/sbin/sources-media edit `apt-get` to apt. Belongs to `calamares-settings-parrot`
-- TODO: services selector (nginx, apache2, ...) in core packages
-- FIXME: bash-completion and bash failed to install because of overwriting settings in /etc/. Try to solve it and add bash-completion to bootstrap again
-- FIXME: console-setup's setting at /etc/default/console-setup needs to change charmap to utf-8
-- TODO: install parrot's skel
-- TODO: install debian front-end like "dialog"
-- TODO: seem like debootstrap pulled everything (222 packages) but only installed required packages (about less than 100 packages). Must optimize it for faster debootstrap step
+Live iso requires: `debootstrap`, temporarily included in `shellprocess-bootstrap`
+- **FIXME**: /usr/sbin/sources-media edit `apt-get` to apt. Belongs to `calamares-settings-parrot`
+- **TODO**: services selector (nginx, apache2, ...) in core packages
+- **FIXME**: bash-completion and bash failed to install because of overwriting settings in /etc/. Try to solve it and add bash-completion to bootstrap again
+- **FIXME**: console-setup's setting at /etc/default/console-setup needs to change charmap to utf-8
+- **TODO**: install parrot's skel
+- **TODO**: install debian front-end like "dialog"
+- **TODO**: seem like debootstrap pulled everything (222 packages) but only installed required packages (about less than 100 packages). Must optimize it for faster debootstrap step
 
 After install issues:
 - default `/etc/bash.bashrc` and user `.bashrc` remains debian standard
