@@ -1,5 +1,5 @@
 - Create netinstaller module for calamares
-- Netinstaller module is based on https://arcolinuxforum.com/viewtopic.php?f=46&t=2525&p=10207b
+- Netinstaller module is based on [https://arcolinuxforum.com/viewtopic.php?f=46&t=2525&p=10207b](this).
 ```
 rm -f /etc/machine-id /var/lib/dbus/machine-id
 dbus-uuidgen --ensure=/etc/machine-id
