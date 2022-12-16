@@ -9,7 +9,16 @@ RE: https://wiki.debian.org/MachineId
 Shout out @Pandaiscool author of RebornOS for this solution
 License: GPL3 (soem settings from arco linux)
 
+<<<<<<< HEAD
 Live iso requires: `debootstrap`, temporarily included in `shellprocess-bootstrap`.
+=======
+Live iso requires: debootstrap
+- FIXME: /usr/sbin/sources-media edit `apt-get` to apt. Belongs to `calamares-settings-parrot`
+- TODO: services selector (nginx, apache2, ...) in core packages
+- FIXME: console-setup's setting at /etc/default/console-setup needs to change charmap to utf-8
+- TODO: install parrot's skel
+- TODO: seem like debootstrap pulled everything (222 packages) but only installed required packages (about less than 100 packages). Must optimize it for faster debootstrap step
+>>>>>>> upstream/master
 
 ##### Tasks:
 - **FIXME**: /usr/sbin/sources-media edit `apt-get` to apt. Belongs to `calamares-settings-parrot`
