@@ -1,11 +1,12 @@
-Dpkg::Options {
-  "--force-confnew";
+APT {
+  Get {
+    Assume-Yes "true";
+    Fix-Broken "true";
+  };
 };
 
-APT::Get::Assume-Yes {
-  "true";
-};
-
-APT::Get::force-yes {
-  "true";
-};
+Dpkg {
+  Options {
+    "--force-confnew";
+  }
+}
