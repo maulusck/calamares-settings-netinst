@@ -3,7 +3,12 @@ APT {
     Assume-Yes "true";
     Fix-Broken "true";
   };
+  // Extract templates at https://gist.github.com/xuru/3084995. Better without cleaning logs?
+  ExtractTemplates {
+    TempDir "/tmp";
+  }
 };
+// https://superuser.com/a/1444431 for more configs that allows auto remove and all
 
 Dpkg {
   Options {
