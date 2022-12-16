@@ -12,6 +12,11 @@ License: GPL3 (soem settings from arco linux)
 Live iso requires: `debootstrap`, temporarily included in `shellprocess-bootstrap`.
 - FIXME: /usr/sbin/sources-media edit `apt-get` to apt. Belongs to `calamares-settings-parrot`
 - TODO: services selector (nginx, apache2, ...) in core packages
+<<<<<<< HEAD
+=======
+- NOTICE: console-setup has UTF-8 when calamares is 3.2.36. The latest version set ISO-* for some reason
+- TODO: install parrot's skel
+>>>>>>> upstream/master
 - TODO: seem like debootstrap pulled everything (222 packages) but only installed required packages (about less than 100 packages). Must optimize it for faster debootstrap step
 
 ##### Tasks:
